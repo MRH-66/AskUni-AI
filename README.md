@@ -61,6 +61,7 @@ pip install -r requirements.txt
 ```
 
 3️⃣ **Download the LLMs (Hugging Face Checkpoints)**
+
 Open CMD in the project directory and then download these models. Make sure you have at least 20GB of free space available on the disk
 ```bash
 git clone https://huggingface.co/facebook/bart-large-cnn
