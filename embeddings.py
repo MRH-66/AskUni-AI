@@ -9,8 +9,8 @@ from langchain_community.document_loaders import PyPDFLoader
 pdf_files = [
     r'D:\University\7th Semester\Data Mining\Project\Data\DataSet.pdf',
     r'D:\University\7th Semester\Data Mining\Project\Data\Hand book Undergraduate Studies.pdf',
-    r'D:\University\7th Semester\Data Mining\Project\Data\Participant-Guide.pdf',
-    r'D:\University\7th Semester\Data Mining\Project\Data\Clean_Scrape_data.pdf'
+    r'D:\University\7th Semester\Data Mining\Project\Data\Participant-Guide.pdf'
+    #r'D:\University\7th Semester\Data Mining\Project\Data\Clean_Scrape_data.pdf'
 ]
 
 # Path to ChromaDB
