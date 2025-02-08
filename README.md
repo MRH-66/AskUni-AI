@@ -88,7 +88,10 @@ streamlit run main.py
  ┣ 📂 bart-large-cnn  # Downloaded LLM  
  ┣ 📂 LaMini-GPT-1.5B  # Downloaded LLM  
  ┣ 📂 chroma_db  # Vector database storage  
- ┣ 📂 Data  # Scraped data and documents  
+ ┣ 📂 Data  # Scraped data and documents
+ ┃ ┣ 📜 DataSet.pdf
+ ┃ ┣ 📜 Participant-Guide.pdf
+ ┃ ┗ 📜 Hand book Undergraduate Studies.pdf
  ┣ 📂 NoteBooks  # Jupyter Notebooks for preprocessing and conversions  
  ┃ ┣ 📜 clean_scraping_data.ipynb  # Cleans and converts scraped text into a structured PDF  
  ┃ ┣ 📜 Data_Preprocessing.ipynb  # Processes Excel student data  
@@ -96,7 +99,8 @@ streamlit run main.py
  ┣ 📜 scrapping.py  # Web scraper  
  ┣ 📜 embeddings.py  # Embedding generation  
  ┣ 📜 utils.py  # Context retrieval, summarization, answering  
- ┣ 📜 main.py  # Streamlit UI for chatbot  
+ ┣ 📜 main.py  # Streamlit UI for chatbot
+ ┗ 📜 design.py  # UI Design
  ┣ 📜 requirements.txt  # Dependencies  
  ┗ 📜 README.md  # Project Documentation
 ```
@@ -112,7 +116,7 @@ streamlit run main.py
 - Use the cleaned PDF for embedding generation.
 
 ### 2️⃣ Data_Preprocessing.ipynb
-**Purpose:** Processes Excel files containing student data.
+**Purpose:** Processes Excel/CSV file containing student data.
 
 **How to Use:**
 - Place your Excel file in the `data/` folder.
