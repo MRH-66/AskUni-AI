@@ -51,8 +51,8 @@ Using one model for both tasks would lead to less accurate and longer responses.
 
 1️⃣ **Clone the repository**  
 ```bash
-git clone https://github.com/your-repo/ai-help-desk-chatbot.git
-cd ai-help-desk-chatbot
+git clone https://github.com/MRH-66/AskUni-AI.git
+cd AskUni-AI
 ```
 
 2️⃣ **Installation Requirements**
