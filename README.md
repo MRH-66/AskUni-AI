@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 3️⃣ **Download the LLMs (Hugging Face Checkpoints)**
 
-Open CMD in the project directory and then download these models. Make sure you have at least 20GB of free space available on the disk
+➡️Open CMD in the project directory and then download these models. Make sure you have at least 20GB of free space available on the disk
 ```bash
 git clone https://huggingface.co/facebook/bart-large-cnn
 git clone https://huggingface.co/MBZUAI/LaMini-GPT-1.5B
@@ -133,22 +133,34 @@ streamlit run main.py
 
 ## Troubleshooting 🔧
 
-### Issue: `ModuleNotFoundError: No module named 'playwright'`
+### ➡️Issue: `ModuleNotFoundError: No module named 'playwright'`
 **Fix:**
 ```bash
 pip install playwright
 playwright install
 ```
 
-### Issue: Device ran out of memory (OOM Error)
+### ➡️Issue: Device ran out of memory (OOM Error)
 **Fix:**
 - Reduce `chunk_size` in `embeddings.py`.
 - Use `device='cpu'` in models if running on a low-GPU machine.
 
-### Issue: No response from chatbot
+### ➡️Issue: No response from chatbot
 **Fix:**
 - Ensure both LLMs are downloaded and placed in the project directory.
 - Run `python embeddings.py` again before starting `main.py`.
+
+### ➡️Issue: Missing dependencies and Python version mismatch
+**Fix:**
+- Before installing the dependencies, create a Conda environment and activate it.
+```bash
+conda create -n ai-help-desk python=3.10.12
+conda activate ai-help-desk
+```
+- After activating the environment, install the required dependencies.
+```bash
+pip install -r requirements.txt
+```
 
 ## Future Improvements 🚀
 - Add support for more university departments (expandable knowledge base).
@@ -157,7 +169,9 @@ playwright install
 - Add support for voice-based queries for hands-free interaction.
 
 ## Contributors 👨‍💻
-**Rehan Hanif**
+
+**Muhammad Rehan Hanif**
+
 📧 Contact: rehan.hanif2004@gmail.com
 
 ## Ready to Try?
